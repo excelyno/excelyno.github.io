@@ -12,9 +12,23 @@
         <a href="index.html" class="back-button">Kembali ke Landing Page</a>
     </header>
 
-    <div class="calculator-container">
-        <!-- Tempatkan kalkulator matriks Anda di sini -->
+    <div class="container">
+        <form id="matrix-form">
+            <label for="matrix-size">Pilih Ukuran Matriks:</label>
+            <select id="matrix-size">
+                <option value="2">2x2</option>
+                <option value="3">3x3</option>
+            </select>
+            <div id="matrix-input"></div>
+            <button type="button" id="calculate-btn">Hitung</button>
+        </form>
+        <div id="results">
+            <h2>Hasil:</h2>
+            <div id="steps"></div>
+        </div>
     </div>
+
+    <script src="./script/matriks.js"></script>
 
     <footer>
         <p>&copy; 2024 Kalkulator Web</p>
