@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Kalkulator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Galeri Gotong Royong</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang di Kalkulator Web!</h1>
-        <p>Pilih kalkulator yang ingin Anda gunakan:</p>
-    </header>
-    
-    <div class="button-container">
-        <a href="./sub-page/invers.html" class="button">Kalkulator Invers</a>
-        <a href="./sub-page/lingkaran.html" class="button">Kalkulator Lingkaran</a>
-        <a href="./sub-page/matriks.html" class="button">Kalkulator Matriks</a>
+
+    <h1>Galeri Gotong Royong</h1>
+    <div class="gallery">
+        <div class="image-box" onclick="showInfo(0)">
+            <img src="gotong-royong-sekolah.jpg" alt="Gotong Royong di Sekolah">
+            <div class="overlay">
+                <p>Gotong royong di sekolah membantu menciptakan lingkungan belajar yang bersih dan nyaman.</p>
+            </div>
+        </div>
+
+        <div class="image-box" onclick="showInfo(1)">
+            <img src="gotong-royong-masyarakat.jpg" alt="Gotong Royong di Masyarakat">
+            <div class="overlay">
+                <p>Gotong royong di masyarakat mempererat hubungan antarwarga dan menciptakan lingkungan yang harmonis.</p>
+            </div>
+        </div>
+
+        <div class="image-box" onclick="showInfo(2)">
+            <img src="gotong-royong-rumah.jpg" alt="Gotong Royong di Rumah">
+            <div class="overlay">
+                <p>Gotong royong dalam keluarga mengajarkan nilai kebersamaan dan tanggung jawab sejak dini.</p>
+            </div>
+        </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2024 Kalkulator Web</p>
-    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
